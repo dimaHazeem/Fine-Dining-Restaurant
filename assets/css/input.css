@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme{
+    --mainColor : #c9ab81;
+}
+
+@utility row{
+    @apply flex flex-row items-center gap-5;
+}
+
+@utility test{
+    @apply border-2 border-amber-200;
+}
