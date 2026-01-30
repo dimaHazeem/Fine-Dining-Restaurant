@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 @theme{
-    --mainColor : #c9ab81;
+    --color-mainColor : #c9ab81;
+    --color-secColor : #715b3e;
+    --font-sans : "Open Sans", sans-serif;
 }
 
 @utility row{
@@ -10,4 +12,8 @@
 
 @utility test{
     @apply border-2 border-amber-200;
+}
+
+@utility nav-items{
+    @apply uppercase cursor-pointer text-white font-sans text-[14px] font-thin hover:font-bold
 }

@@ -3,17 +3,18 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Open Sans", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-white: #fff;
     --spacing: 0.25rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-thin: 100;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-mainColor: #c9ab81;
+    --color-secColor: #715b3e;
   }
 }
 @layer base {
@@ -174,14 +175,35 @@
   .table {
     display: table;
   }
+  .h-25 {
+    height: calc(var(--spacing) * 25);
+  }
+  .h-auto {
+    height: auto;
+  }
   .h-lvh {
     height: 100lvh;
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .border-collapse {
     border-collapse: collapse;
   }
-  .cursor-auto {
-    cursor: auto;
+  .nav-items {
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    --tw-font-weight: var(--font-weight-thin);
+    font-weight: var(--font-weight-thin);
+    color: var(--color-white);
+    text-transform: uppercase;
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-bold);
+        font-weight: var(--font-weight-bold);
+      }
+    }
   }
   .cursor-pointer {
     cursor: pointer;
@@ -201,20 +223,42 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-mainColor {
+    border-bottom-color: var(--color-mainColor);
+  }
+  .border-b-secColor {
+    border-bottom-color: var(--color-secColor);
+  }
   .bg-\[url\(\.\/\.\.\/images\/HeroBackground\.jpg\)\] {
     background-image: url(./../images/HeroBackground.jpg);
   }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
+  .bg-auto {
+    background-size: auto;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .stroke-mainColor {
+    stroke: var(--color-mainColor);
+  }
+  .stroke-secColor {
+    stroke: var(--color-secColor);
+  }
+  .stroke-\[1px\] {
+    stroke-width: 1px;
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
-  .uppercase {
-    text-transform: uppercase;
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .underline {
     text-decoration-line: underline;
@@ -223,6 +267,10 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -237,6 +285,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-font-weight: initial;
       --tw-border-style: solid;
       --tw-outline-style: solid;
     }
