@@ -1,19 +1,43 @@
 @import "tailwindcss";
 
-@theme{
-    --color-mainColor : #c9ab81;
-    --color-secColor : #715b3e;
-    --font-sans : "Open Sans", sans-serif;
+@theme {
+    --color-mainColor: #c9ab81;
+    --color-secColor: #715b3e;
+    --font-sans: "Open Sans", sans-serif;
 }
 
-@utility row{
+.CaviarDreams {
+    font-family: "Caviar Dreams", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    color: rgb(201, 171, 129);
+}
+
+.miniver {
+    font-family: Miniver;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(201, 171, 129);
+}
+
+.Josefin {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 29px;
+    color: rgb(255, 255, 255);
+}
+
+@utility row {
     @apply flex flex-row items-center gap-5;
 }
 
-@utility test{
+@utility test {
     @apply border-2 border-amber-200;
 }
 
-@utility nav-items{
+@utility nav-items {
     @apply uppercase cursor-pointer text-white font-sans text-[14px] font-thin hover:font-bold
 }
