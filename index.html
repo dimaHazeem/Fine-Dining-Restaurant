@@ -27,19 +27,19 @@
 </head>
 
 <body class="bg-mainBG">
-  <header>
+  <header class="conatiner mx-auto">
     <div class="bg-[url(./../images/HeroBackground.jpg)] h-screen bg-cover bg-center">
-      <nav class="row justify-between px-7 border-b-secColor border-b">
+      <nav class="row items-center justify-between px-7 border-b-secColor border-b">
         <button class="p-5 cursor-pointer">
           <img src="./assets/images/Logo.png" class="bg-auto" alt="">
         </button>
-        <ul class="row gap-5 hidden md:flex">
-          <li class="nav-items">Home</li>
-          <li class="nav-items">Our Menu</li>
-          <li class="nav-items">Pages</li>
-          <li class="nav-items">Portfolio</li>
-          <li class="nav-items">Blog</li>
-          <li class="nav-items">Contact Us</li>
+        <ul class="row items-center gap-5 hidden md:flex">
+          <li class="nav-items tracking-widest OpenSans-CondLight">Home</li>
+          <li class="nav-items tracking-widest OpenSans-CondLight">Our Menu</li>
+          <li class="nav-items tracking-widest OpenSans-CondLight">Pages</li>
+          <li class="nav-items tracking-widest OpenSans-CondLight">Portfolio</li>
+          <li class="nav-items tracking-widest OpenSans-CondLight">Blog</li>
+          <li class="nav-items tracking-widest OpenSans-CondLight">Contact Us</li>
         </ul>
         <button class="p-5 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
@@ -51,38 +51,44 @@
           </svg>
         </button>
       </nav>
-      <div class="col justify-center gap-15 h-full">
+      <div class="col  items-center justify-center gap-15 h-full">
         <p class="miniver text-mainColor hidden lg:block">Welcom to our delicious corner</p>
-        <div class="row justify-between gap-5">
+        <div class="row items-center justify-between gap-5">
           <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
-          <p class="uppercase text-center text-mainColor Metropolis tracking-widest text-4xl md:text-6xl lg:text-8xl">The Best Dishes</p>
+          <p class="uppercase text-center text-mainColor Metropolis tracking-widest text-4xl md:text-6xl lg:text-8xl">
+            The Best Dishes</p>
           <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
         </div>
         <p class="text-white max-w-md text-center Josefin">We have a proper passion for cooking. Love is the secret
           ingredient
           that makes all our meals taste better and magical.</p>
-        <button class="cursor-pointer uppercase px-9 py-2 OpenSans-CondLight text-white border border-mainColor tracking-widest"> view
+        <button
+          class="cursor-pointer uppercase px-9 py-2 OpenSans-CondLight text-white border border-mainColor tracking-widest">
+          view
           more</button>
-        <div class="row justify-between gap-10">
-          <button class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">1</button>
-          <button class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">2</button>
-          <button class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">3</button>
-        </div>  
+        <div class="row items-center justify-between gap-10">
+          <button
+            class="cursor-pointer text-mainColor decoration-double underline-offset-3 underline decoration-mainColor">1</button>
+          <button
+            class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">2</button>
+          <button
+            class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">3</button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="my-50">
-      <div class="col p-5 gap-5">
+    <section class="my-40">
+      <div class="col  items-center p-5 gap-5">
         <h1 class="miniver text-mainColor ">Our Story</h1>
-        <p class="CaviarDreams text-mainColor tracking-widest">ABOUT US</p>
+        <p class="CaviarDreams font-light text-mainColor tracking-widest text-2xl md:text-4xl lg:text-6xl">ABOUT US</p>
         <p class="text-white Josefin max-w-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Cupiditate
           sapiente earum veniam
           debitis dolorum soluta repudiandae molestias</p>
       </div>
-      <div class="py-10">
+      <div class="py-10 dummy-container">
         <div class="grid gap-20 lg:grid-cols-3 items-center">
           <img src="./assets/images/main-img-1.jpg" class="w-full aspect-4/5 object-cover" alt="img">
           <img src="./assets/images/main-img-3.jpg" class="w-full aspect-4/5 object-cover " alt="img">
@@ -91,9 +97,9 @@
       </div>
     </section>
 
-    <section class="my-50">
+    <section class="my-40">
       <div class="grid lg:grid-cols-2">
-        <div class="bg-[#0f1d22] h-full col justify-center gap-10 py-20">
+        <div class="bg-secBG h-full col items-center justify-center gap-10 py-20">
           <div>
             <img src="./assets/images/quote-icon.png" class="w-full h-full object-contain" alt="img">
           </div>
@@ -112,17 +118,18 @@
       </div>
     </section>
 
-    <section class="my-50">
+    <section class="my-40 dummy-container">
       <div class="grid lg:grid-cols-2">
         <div>
           <img src="./assets/images/SPECIALTIES1.jpg" class="w-full h-full object-contain" alt="img">
         </div>
-        <div class="h-full col justify-center text-center gap-10 py-20 px-10">
+        <div class="h-full col items-center justify-center text-center gap-10 py-20 px-10">
           <div>
             <h3 class="miniver text-mainColor font-normal">Recommendations</h3>
           </div>
           <div>
-            <p class="text-mainColor font-bold leading-17.75 CaviarDreams">OUR BEST SPECIALTIES</p>
+            <p class="text-mainColor font-light leading-17.75 CaviarDreams text-2xl md:text-4xl lg:text-6xl">OUR BEST
+              SPECIALTIES</p>
           </div>
           <div>
             <p class="text-[#afb8b3] miniver max-w-md text-center font-[39px]">Lorem ipsum dolor sit amet consectetur
@@ -133,10 +140,142 @@
             <h3 class="text-mainColor text-center uppercase tracking-widest">Robert Chang</h3>
           </div>
           <div>
-            <button class="tracking-widest OpenSans-CondLight border border-mainColor px-9 py-2 uppercase text-white font-light">
+            <button
+              class="tracking-widest OpenSans-CondLight border border-mainColor px-9 py-2 uppercase text-white font-light">
               view all
             </button>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-40 bg-secBG py-30">
+      <div class="col gap-10 dummy-container">
+        <div class="col items-center justify-center text-center gap-5">
+          <p class="miniver text-mainColor">Special selection</p>
+          <p class="uppercase text-mainColor tracking-widest CaviarDreams text-2xl md:text-4xl lg:text-6xl">FROM OUR
+            MENU
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30">
+          <div class="col gap-10">
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">Beef burger meal</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$32</span>
+              </div>
+              <p class="text-white">Classic greek salad, barrel aged feta cheese, bread</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">ROASTED LAMB RUMP</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$25</span>
+              </div>
+              <p class="text-white">Grilled lamb cutlets, pomegranate glaze, butternut</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">PAN SEARED SEA BASS</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$38</span>
+              </div>
+              <p class="text-white">Saffron and mussel’s broth, new potatoes, beans</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">KING PRAWNS AND LOBSTER</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$38</span>
+              </div>
+              <p class="text-white">Creamy saffron, sauce Vierge</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">CITRUS CURED SALMON</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$41</span>
+              </div>
+              <p class="text-white">Horseradish creme fraiche, beetroot mousse, oil</p>
+            </div>
+          </div>
+          <div class="col gap-10">
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">Beef burger meal</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$32</span>
+              </div>
+              <p class="text-white">Classic greek salad, barrel aged feta cheese, bread</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">ROASTED LAMB RUMP</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$25</span>
+              </div>
+              <p class="text-white">Grilled lamb cutlets, pomegranate glaze, butternut</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">PAN SEARED SEA BASS</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$38</span>
+              </div>
+              <p class="text-white">Saffron and mussel’s broth, new potatoes, beans</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">KING PRAWNS AND LOBSTER</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$38</span>
+              </div>
+              <p class="text-white">Creamy saffron, sauce Vierge</p>
+            </div>
+            <div class="col">
+              <div class="row gap-3 items-baseline">
+                <p class="uppercase CaviarDreams tracking-widest text-mainColor">CITRUS CURED SALMON</p>
+                <div class="flex-1 space-y-1">
+                  <div class="border-b border-dotted border-mainColor"></div>
+                  <div class="border-b border-dotted border-mainColor"></div>
+                </div>
+                <span class="text-mainColor">$41</span>
+              </div>
+              <p class="text-white">Horseradish creme fraiche, beetroot mousse, oil</p>
+            </div>
+          </div>
+        </div>
+        <div class="col justify-center items-center">
+          <button
+            class="py-2 px-8 tracking-widest uppercase text-white border border-mainColor OpenSans-CondLight font-light">View
+            all</button>
         </div>
       </div>
     </section>

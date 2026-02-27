@@ -4,50 +4,50 @@
     --color-mainColor: #c9ab81;
     --color-secColor: #715b3e;
     --color-mainBG: #0b1315;
+    --color-secBG: #0f1d22;
     --font-sans: "Open Sans", sans-serif;
 }
 
 .CaviarDreams {
     font-family: "Caviar Dreams", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 61px;
 }
-
 .miniver {
     font-family: Miniver;
     font-size: 19px;
     font-weight: 400;
     line-height: 28px;
 }
-
 .Josefin {
     font-family: "Josefin Sans", sans-serif;
     font-size: 19px;
     font-weight: 300;
     line-height: 29px;
 }
-
 .Metropolis {
     font-family: "Metropolis", sans-serif;
 }
-.OpenSans-CondLight{
+
+.OpenSans-CondLight {
     font-family: "OpenSans-CondLight", sans-serif;
     font-size: 19px;
     font-weight: 300;
-    line-height: 29px;    
+    line-height: 29px;
 }
 
 @utility row {
-    @apply flex flex-row items-center;
+    @apply flex flex-row;
 }
 
 @utility col {
-    @apply flex flex-col items-center;
+    @apply flex flex-col;
 }
 
 @utility nav-items {
     @apply uppercase cursor-pointer text-white font-sans text-[14px] font-thin hover:font-bold
+}
+
+@utility dummy-container{
+    @apply max-w-7xl mx-auto px-4
 }
 
 @font-face {
@@ -56,6 +56,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'OpenSans-CondLight';
     src: url('../fonts/OpenSans-CondLight.ttf') format('truetype');
