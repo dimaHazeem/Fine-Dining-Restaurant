@@ -195,9 +195,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .aspect-4\/5 {
     aspect-ratio: 4/5;
   }
@@ -219,9 +216,6 @@
   .max-w-md {
     max-width: var(--container-md);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .nav-items {
     cursor: pointer;
     font-family: var(--font-sans);
@@ -239,9 +233,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .items-center {
     align-items: center;
@@ -336,14 +327,6 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-  .leading-17 {
-    --tw-leading: calc(var(--spacing) * 17);
-    line-height: calc(var(--spacing) * 17);
-  }
   .leading-17\.75 {
     --tw-leading: calc(var(--spacing) * 17.75);
     line-height: calc(var(--spacing) * 17.75);
@@ -379,13 +362,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .hover\:underline {
     &:hover {
@@ -477,13 +453,13 @@
 }
 @font-face {
   font-family: 'Metropolis';
-  src: url('../fonts/Metropolis\ 1920.otf') format('opentype');
+  src: url('../fonts/Metropolis 1920.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSans-CondLight';
-  src: url('../fonts/OpenSans-CondLight.ttf') format('opentype');
+  src: url('../fonts/OpenSans-CondLight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -504,11 +480,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -516,7 +487,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
     }
   }
 }
