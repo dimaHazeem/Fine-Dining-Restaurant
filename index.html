@@ -33,7 +33,7 @@
         <button class="p-5 cursor-pointer">
           <img src="./assets/images/Logo.png" class="bg-auto" alt="">
         </button>
-        <ul class="row hidden md:flex">
+        <ul class="row gap-5 hidden md:flex">
           <li class="nav-items">Home</li>
           <li class="nav-items">Our Menu</li>
           <li class="nav-items">Pages</li>
@@ -55,23 +55,42 @@
   </header>
 
   <main>
-    <section class="container mx-auto">
-      <div class="row flex-col p-5">
-        <p class="miniver">Our Story</p>
-        <p class="CaviarDreams">ABOUT US</p>
+    <section class="my-12">
+      <div class="row flex-col p-5 gap-5">
+        <h1 class="miniver text-mainColor">Our Story</h1>
+        <p class="CaviarDreams text-mainColor">ABOUT US</p>
         <p class="text-white Josefin max-w-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Cupiditate
           sapiente earum veniam
           debitis dolorum soluta repudiandae molestias</p>
       </div>
-      <div class="container mx-auto py-10">
+      <div class="py-10">
         <div class="grid gap-3 lg:grid-cols-3 items-center">
-          <img src="./assets/images/main-img-1.jpg" class="w-full h-141 object-contain">
-          <img src="./assets/images/main-img-3.jpg" class="w-full h-141 object-contain">
-          <img src="./assets/images/main-img-2.jpg" class="w-full h-141 object-contain">
+          <img src="./assets/images/main-img-1.jpg" class="w-full h-141 object-contain" alt="img">
+          <img src="./assets/images/main-img-3.jpg" class="w-full h-141 object-contain" alt="img">
+          <img src="./assets/images/main-img-2.jpg" class="w-full h-141 object-contain" alt="img">
         </div>
       </div>
 
+    </section>
+
+    <section class="my-12">
+      <div class="row grid lg:grid-cols-2">
+        <div class="bg-[#0f1d22] h-full row flex-col justify-center gap-10 py-20">
+          <div>
+            <img src="./assets/images/quote-icon.png" alt="img">
+          </div>
+          <div>
+            <p class="text-[#afb8b3] miniver max-w-md text-center font-[39px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum obcaecati, doloremque autem quibusdam numquam dolor. Consequuntur reiciendis aut cumque.</p>
+          </div>
+          <div>
+            <h3 class="text-mainColor text-center">Robert Chang</h3>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/main-img-4.jpg" class="w-full h-full object-contain" alt="img">
+        </div>
+      </div>
     </section>
   </main>
 </body>

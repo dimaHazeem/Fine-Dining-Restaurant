@@ -11,7 +11,6 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 61px;
-    color: rgb(201, 171, 129);
 }
 
 .miniver {
@@ -19,7 +18,6 @@
     font-size: 19px;
     font-weight: 400;
     line-height: 28px;
-    color: rgb(201, 171, 129);
 }
 
 .Josefin {
@@ -27,11 +25,10 @@
     font-size: 19px;
     font-weight: 300;
     line-height: 29px;
-    color: rgb(255, 255, 255);
 }
 
 @utility row {
-    @apply flex flex-row items-center gap-5;
+    @apply flex flex-row items-center;
 }
 
 @utility test {
