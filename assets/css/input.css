@@ -3,23 +3,21 @@
 @theme {
     --color-mainColor: #c9ab81;
     --color-secColor: #715b3e;
+    --color-mainBG:#0b1315;
     --font-sans: "Open Sans", sans-serif;
 }
-
 .CaviarDreams {
     font-family: "Caviar Dreams", sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 61px;
 }
-
 .miniver {
     font-family: Miniver;
     font-size: 19px;
     font-weight: 400;
     line-height: 28px;
 }
-
 .Josefin {
     font-family: "Josefin Sans", sans-serif;
     font-size: 19px;
@@ -30,11 +28,9 @@
 @utility row {
     @apply flex flex-row items-center;
 }
-
-@utility test {
-    @apply border-2 border-amber-200;
+@utility col {
+    @apply flex flex-col items-center;
 }
-
 @utility nav-items {
     @apply uppercase cursor-pointer text-white font-sans text-[14px] font-thin hover:font-bold
 }

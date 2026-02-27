@@ -26,9 +26,9 @@
   <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-[#0b1315]">
+<body class="bg-mainBG">
   <header>
-    <div class="bg-[url(./../images/HeroBackground.jpg)] h-lvh bg-cover bg-center ">
+    <div class="bg-[url(./../images/HeroBackground.jpg)] h-screen bg-cover bg-center ">
       <div class="row justify-between px-7 border-b-secColor border-b">
         <button class="p-5 cursor-pointer">
           <img src="./assets/images/Logo.png" class="bg-auto" alt="">
@@ -55,8 +55,8 @@
   </header>
 
   <main>
-    <section class="my-12">
-      <div class="row flex-col p-5 gap-5">
+    <section class="my-50">
+      <div class="col p-5 gap-5">
         <h1 class="miniver text-mainColor">Our Story</h1>
         <p class="CaviarDreams text-mainColor">ABOUT US</p>
         <p class="text-white Josefin max-w-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -65,23 +65,24 @@
           debitis dolorum soluta repudiandae molestias</p>
       </div>
       <div class="py-10">
-        <div class="grid gap-3 lg:grid-cols-3 items-center">
-          <img src="./assets/images/main-img-1.jpg" class="w-full h-141 object-contain" alt="img">
-          <img src="./assets/images/main-img-3.jpg" class="w-full h-141 object-contain" alt="img">
-          <img src="./assets/images/main-img-2.jpg" class="w-full h-141 object-contain" alt="img">
+        <div class="grid gap-20 lg:grid-cols-3 items-center">
+          <img src="./assets/images/main-img-1.jpg" class="w-full aspect-4/5 object-cover" alt="img">
+          <img src="./assets/images/main-img-3.jpg" class="w-full aspect-4/5 object-cover " alt="img">
+          <img src="./assets/images/main-img-2.jpg" class="w-full aspect-4/5 object-cover" alt="img">
         </div>
       </div>
-
     </section>
 
-    <section class="my-12">
-      <div class="row grid lg:grid-cols-2">
-        <div class="bg-[#0f1d22] h-full row flex-col justify-center gap-10 py-20">
+    <section class="my-50">
+      <div class="grid lg:grid-cols-2">
+        <div class="bg-[#0f1d22] h-full col justify-center gap-10 py-20">
           <div>
-            <img src="./assets/images/quote-icon.png" alt="img">
+            <img src="./assets/images/quote-icon.png" class="w-full h-full object-contain" alt="img">
           </div>
           <div>
-            <p class="text-[#afb8b3] miniver max-w-md text-center font-[39px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum obcaecati, doloremque autem quibusdam numquam dolor. Consequuntur reiciendis aut cumque.</p>
+            <p class="text-[#afb8b3] miniver max-w-md text-center font-[39px]">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Tempora nostrum obcaecati, doloremque autem quibusdam numquam dolor. Consequuntur
+              reiciendis aut cumque.</p>
           </div>
           <div>
             <h3 class="text-mainColor text-center">Robert Chang</h3>
@@ -89,6 +90,35 @@
         </div>
         <div>
           <img src="./assets/images/main-img-4.jpg" class="w-full h-full object-contain" alt="img">
+        </div>
+      </div>
+    </section>
+
+    <section class="my-50">
+      <div class="grid lg:grid-cols-2">
+        <div>
+          <img src="./assets/images/SPECIALTIES1.jpg" class="w-full h-full object-contain" alt="img">
+        </div>
+        <div class="h-full col justify-center text-center gap-10 py-20 px-10">
+          <div>
+            <h3  class="miniver text-mainColor font-normal">Recommendations</h3>
+          </div>
+          <div>
+            <p class="text-mainColor font-bold leading-17.75 CaviarDreams">OUR BEST SPECIALTIES</p>
+          </div>
+          <div>
+            <p class="text-[#afb8b3] miniver max-w-md text-center font-[39px]">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Tempora nostrum obcaecati, doloremque autem quibusdam numquam dolor. Consequuntur
+              reiciendis aut cumque.</p>
+          </div>
+          <div>
+            <h3 class="text-mainColor text-center">Robert Chang</h3>
+          </div>
+          <div>
+            <button class="border border-mainColor px-9 py-2 uppercase text-white font-light"> 
+              view all
+            </button>
+          </div>
         </div>
       </div>
     </section>
