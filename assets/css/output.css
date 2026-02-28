@@ -185,17 +185,8 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .static {
     position: static;
-  }
-  .col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-  .col-span-2 {
-    grid-column: span 2 / span 2;
   }
   .dummy-container {
     margin-inline: auto;
@@ -211,9 +202,6 @@
   .my-50 {
     margin-block: calc(var(--spacing) * 50);
   }
-  .mt-50 {
-    margin-top: calc(var(--spacing) * 50);
-  }
   .col {
     display: flex;
     flex-direction: column;
@@ -222,17 +210,11 @@
     display: flex;
     flex-direction: row;
   }
-  .flex {
-    display: flex;
-  }
   .grid {
     display: grid;
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .aspect-4\/5 {
     aspect-ratio: 4/5;
@@ -249,38 +231,14 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-\[30\%\] {
-    width: 30%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
-  }
-  .w-\[50\] {
-    width: 50;
-  }
-  .w-\[60\%\] {
-    width: 60%;
-  }
-  .w-\[90\%\] {
-    width: 90%;
-  }
-  .w-auto {
-    width: auto;
-  }
   .w-full {
     width: 100%;
-  }
-  .w-xl {
-    width: var(--container-xl);
   }
   .max-w-md {
     max-width: var(--container-md);
   }
   .flex-1 {
     flex: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .nav-items {
     cursor: pointer;
@@ -300,17 +258,8 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize {
-    resize: both;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .items-baseline {
     align-items: baseline;
@@ -335,9 +284,6 @@
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
   .space-y-1 {
     :where(& > :not(:last-child)) {
@@ -364,27 +310,17 @@
   .border-b-secColor {
     border-bottom-color: var(--color-secColor);
   }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
-  }
   .bg-mainBG {
     background-color: var(--color-mainBG);
   }
   .bg-secBG {
     background-color: var(--color-secBG);
   }
-  .bg-conic {
-    --tw-gradient-position: in oklab;
-    background-image: conic-gradient(var(--tw-gradient-stops));
-  }
   .bg-\[url\(\.\/\.\.\/images\/HeroBackground\.jpg\)\] {
     background-image: url(./../images/HeroBackground.jpg);
   }
   .bg-auto {
     background-size: auto;
-  }
-  .bg-contain {
-    background-size: contain;
   }
   .bg-cover {
     background-size: cover;
@@ -404,14 +340,8 @@
   .object-contain {
     object-fit: contain;
   }
-  .object-cover {
-    object-fit: cover;
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
@@ -437,9 +367,6 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .py-30 {
-    padding-block: calc(var(--spacing) * 30);
-  }
   .py-40 {
     padding-block: calc(var(--spacing) * 40);
   }
@@ -463,10 +390,6 @@
   .text-\[54px\] {
     font-size: 54px;
   }
-  .leading-17 {
-    --tw-leading: calc(var(--spacing) * 17);
-    line-height: calc(var(--spacing) * 17);
-  }
   .leading-17\.75 {
     --tw-leading: calc(var(--spacing) * 17.75);
     line-height: calc(var(--spacing) * 17.75);
@@ -474,10 +397,6 @@
   .font-\[39px\] {
     --tw-font-weight: 39px;
     font-weight: 39px;
-  }
-  .font-\[400\] {
-    --tw-font-weight: 400;
-    font-weight: 400;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -519,10 +438,6 @@
   .underline-offset-3 {
     text-underline-offset: 3px;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .hover\:underline {
     &:hover {
       @media (hover: hover) {
@@ -551,29 +466,9 @@
       }
     }
   }
-  .max-lg\:gap-20 {
-    @media (width < 64rem) {
-      gap: calc(var(--spacing) * 20);
-    }
-  }
-  .max-md\:gap-20 {
-    @media (width < 48rem) {
-      gap: calc(var(--spacing) * 20);
-    }
-  }
-  .sm\:grid {
-    @media (width >= 40rem) {
-      display: grid;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .sm\:grid-cols-3 {
-    @media (width >= 40rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .sm\:gap-30 {
@@ -591,11 +486,6 @@
       display: flex;
     }
   }
-  .md\:grid-cols-1 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -604,16 +494,6 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .md\:gap-5 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 5);
-    }
-  }
-  .md\:gap-10 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 10);
     }
   }
   .md\:text-4xl {
@@ -631,11 +511,6 @@
   .lg\:col-span-1 {
     @media (width >= 64rem) {
       grid-column: span 1 / span 1;
-    }
-  }
-  .lg\:col-span-2 {
-    @media (width >= 64rem) {
-      grid-column: span 2 / span 2;
     }
   }
   .lg\:block {
@@ -724,11 +599,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -737,7 +607,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
     }
   }
 }
