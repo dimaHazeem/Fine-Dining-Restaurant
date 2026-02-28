@@ -28,7 +28,7 @@
 
 <body class="bg-mainBG">
   <header class="conatiner mx-auto">
-    <div class="bg-[url(./../images/HeroBackground.jpg)] h-screen bg-cover bg-center">
+    <div class="bg-[url(./../images/HeroBackground.jpg)] h-screen bg-cover bg-center bg-fixed">
       <nav class="row items-center justify-between px-7 border-b-secColor border-b">
         <button class="p-5 cursor-pointer">
           <img src="./assets/images/Logo.png" class="bg-auto" alt="">
@@ -89,10 +89,10 @@
           debitis dolorum soluta repudiandae molestias</p>
       </div>
       <div class="py-10 dummy-container">
-        <div class="grid gap-20 lg:grid-cols-3 items-center">
-          <img src="./assets/images/main-img-1.jpg" class="w-full aspect-4/5 object-cover" alt="img">
-          <img src="./assets/images/main-img-3.jpg" class="w-full aspect-4/5 object-cover " alt="img">
-          <img src="./assets/images/main-img-2.jpg" class="w-full aspect-4/5 object-cover" alt="img">
+        <div class="grid md:grid-cols-3 items-center">
+          <img src="./assets/images/main-img-1.jpg" class="w-full aspect-4/5 object-contain py-5" alt="img">
+          <img src="./assets/images/main-img-3.jpg" class="w-full aspect-4/5 object-contain py-5" alt="img">
+          <img src="./assets/images/main-img-2.jpg" class="w-full aspect-4/5 object-contain py-5" alt="img">
         </div>
       </div>
     </section>
@@ -148,7 +148,8 @@
         </div>
       </div>
     </section>
-    <section class="my-40 bg-secBG py-30">
+
+    <section class="my-40 bg-secBG py-40 static">
       <div class="col gap-10 dummy-container">
         <div class="col items-center justify-center text-center gap-5">
           <p class="miniver text-mainColor">Special selection</p>
@@ -276,6 +277,31 @@
           <button
             class="py-2 px-8 tracking-widest uppercase text-white border border-mainColor OpenSans-CondLight font-light">View
             all</button>
+        </div>
+      </div>
+      <div class="absolute">
+        <img src="./assets/images/circle1.png" alt="image">
+      </div>
+    </section>
+
+    <section class="my-50 bg-mainBG">
+      <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 dummy-container">
+        <img src="./assets/images/man1.jpg" alt="img" class="aspect-4/5 object-contain py-5">
+        <img src="./assets/images/man2.jpg" alt="img" class="aspect-4/5 object-contain py-5">
+        <div class="col gap-5 items-center lg:col-span-1 md:col-span-2 justify-center pt-10">
+          <div class="col text-center text-[54px] font-bold gap-5">
+            <p class="text-mainColor miniver">Our food philosophy</p>
+            <p class="text-mainColor uppercase tracking-widest CaviarDreams">our tips</p>
+            <p class="text-white Josefin font-normal text-[29px] max-w-md">Lorem ipsum dolor, sit amet consectetur
+              adipisicing
+              elit. Esse sapiente quod nobis laboriosam itaque distinctio nisi saepe, laborum temporibus optio!</p>
+          </div>
+          <div>
+            <button
+              class="text-white uppercase tracking-widest OpenSans-CondLight border border-mainColor py-2 px-8">read
+              more
+            </button>
+          </div>
         </div>
       </div>
     </section>
