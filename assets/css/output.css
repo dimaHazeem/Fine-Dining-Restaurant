@@ -183,6 +183,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .static {
     position: static;
   }
@@ -200,8 +203,8 @@
   .my-40 {
     margin-block: calc(var(--spacing) * 40);
   }
-  .my-50 {
-    margin-block: calc(var(--spacing) * 50);
+  .mb-40 {
+    margin-bottom: calc(var(--spacing) * 40);
   }
   .col {
     display: flex;
@@ -226,11 +229,17 @@
   .aspect-4\/5 {
     aspect-ratio: 4/5;
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
+  .h-44 {
+    height: calc(var(--spacing) * 44);
   }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
@@ -241,11 +250,17 @@
   .h-\[50\] {
     height: 50;
   }
-  .h-\[50vh\] {
-    height: 50vh;
-  }
   .h-\[70\%\] {
     height: 70%;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[90\%\] {
+    height: 90%;
+  }
+  .h-\[screen\] {
+    height: screen;
   }
   .h-auto {
     height: auto;
@@ -298,9 +313,6 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .items-baseline {
     align-items: baseline;
   }
@@ -350,15 +362,6 @@
   .border-b-secColor {
     border-bottom-color: var(--color-secColor);
   }
-  .bg-\[sr\(https\:\/\/vimeo\.com\/369245407\?fl\=pl\&fe\=sh\)\] {
-    background-color: sr(https://vimeo.com/369245407?fl=pl&fe=sh);
-  }
-  .bg-\[src\(https\:\/\/vimeo\.com\/369245407\?fl\=pl\&fe\=sh\)\] {
-    background-color: src(https://vimeo.com/369245407?fl=pl&fe=sh);
-  }
-  .bg-\[ur\] {
-    background-color: ur;
-  }
   .bg-mainBG {
     background-color: var(--color-mainBG);
   }
@@ -368,50 +371,32 @@
   .bg-\[url\(\)\] {
     background-image: url();
   }
-  .bg-\[url\(\.\)\] {
-    background-image: url(.);
+  .bg-\[url\(\.\.\/images\/ourMenu\/\.jpg\)\] {
+    background-image: url(../images/ourMenu/.jpg);
   }
-  .bg-\[url\(\.\/\)\] {
-    background-image: url(./);
+  .bg-\[url\(\.\.\/images\/ourMenu\/HeaderMenu\.jpg\)\] {
+    background-image: url(../images/ourMenu/HeaderMenu.jpg);
   }
-  .bg-\[url\(\.\/\.\.\/\)\] {
-    background-image: url(./../);
+  .bg-\[url\(\.\.\/images\/ourMenu\/img3\.jpg\)\] {
+    background-image: url(../images/ourMenu/img3.jpg);
   }
-  .bg-\[url\(\.\/\.\.\/images\)\] {
-    background-image: url(./../images);
+  .bg-\[url\(\.\.\/images\/ourMenu\/img4\.jpg\)\] {
+    background-image: url(../images/ourMenu/img4.jpg);
   }
-  .bg-\[url\(\.\/\.\.\/images\/\)\] {
-    background-image: url(./../images/);
+  .bg-\[url\(\.\.\/images\/ourMenu\/showcase-img-2\.jpg\)\] {
+    background-image: url(../images/ourMenu/showcase-img-2.jpg);
   }
-  .bg-\[url\(\.\/\.\.\/images\/\.jpg\)\] {
-    background-image: url(./../images/.jpg);
+  .bg-\[url\(\.\.\/images\/ourMenu\/showcase\.jpg\)\] {
+    background-image: url(../images/ourMenu/showcase.jpg);
   }
   .bg-\[url\(\.\/\.\.\/images\/HeroBackground\.jpg\)\] {
     background-image: url(./../images/HeroBackground.jpg);
   }
-  .bg-\[url\(\.\/\.\.\/images\/ved\.jpg\)\] {
-    background-image: url(./../images/ved.jpg);
+  .bg-\[url\(\.\/\.\.\/images\/ourMenu\/HeaderMenu\.jpg\)\] {
+    background-image: url(./../images/ourMenu/HeaderMenu.jpg);
   }
   .bg-\[url\(\.\/\.\.\/images\/vedio\.jpg\)\] {
     background-image: url(./../images/vedio.jpg);
-  }
-  .bg-\[url\(\.\/\.\.\/images\/video\)\] {
-    background-image: url(./../images/video);
-  }
-  .bg-\[url\(\.\/\.\.\/images\/video\.\)\] {
-    background-image: url(./../images/video.);
-  }
-  .bg-\[url\(\.\/\.\.\/images\/video\.jp\)\] {
-    background-image: url(./../images/video.jp);
-  }
-  .bg-\[url\(\.\/\.\.\/images\/video\.jpg\)\] {
-    background-image: url(./../images/video.jpg);
-  }
-  .bg-\[url\(\.\/\.\.\/images\/video\.jpj\)\] {
-    background-image: url(./../images/video.jpj);
-  }
-  .bg-\[url\(https\:\/\/vimeo\.com\/369245407\?fl\=pl\&fe\=sh\)\] {
-    background-image: url(https://vimeo.com/369245407?fl=pl&fe=sh);
   }
   .bg-auto {
     background-size: auto;
@@ -478,8 +463,14 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
+  .text-\[19px\] {
+    font-size: 19px;
+  }
   .text-\[29px\] {
     font-size: 29px;
+  }
+  .text-\[47px\] {
+    font-size: 47px;
   }
   .text-\[54px\] {
     font-size: 54px;
@@ -543,6 +534,15 @@
   .underline-offset-3 {
     text-underline-offset: 3px;
   }
+  .underline-offset-5 {
+    text-underline-offset: 5px;
+  }
+  .underline-offset-7 {
+    text-underline-offset: 7px;
+  }
+  .underline-offset-8 {
+    text-underline-offset: 8px;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -575,39 +575,9 @@
       }
     }
   }
-  .max-\[600ox\]\:grid-cols-2 {
-    @media (width < 600ox) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .max-\[780px\]\:grid-cols-1 {
-    @media (width < 780px) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  .max-\[600px\]\:grid-cols-2 {
-    @media (width < 600px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .max-\[520px\]\:grid-cols-1 {
-    @media (width < 520px) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  .max-\[520px\]\:grid-cols-2 {
-    @media (width < 520px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .max-\[480px\]\:grid-cols-1 {
     @media (width < 480px) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  .max-\[480px\]\:gap-3 {
-    @media (width < 480px) {
-      gap: calc(var(--spacing) * 3);
     }
   }
   .max-\[480px\]\:gap-5 {
@@ -615,39 +585,9 @@
       gap: calc(var(--spacing) * 5);
     }
   }
-  .max-\[480px\]\:gap-15 {
-    @media (width < 480px) {
-      gap: calc(var(--spacing) * 15);
-    }
-  }
-  .max-lg\:gap-1\.5 {
-    @media (width < 64rem) {
-      gap: calc(var(--spacing) * 1.5);
-    }
-  }
-  .max-lg\:gap-15 {
-    @media (width < 64rem) {
-      gap: calc(var(--spacing) * 15);
-    }
-  }
-  .max-lg\:p-15 {
-    @media (width < 64rem) {
-      padding: calc(var(--spacing) * 15);
-    }
-  }
   .max-lg\:py-5 {
     @media (width < 64rem) {
       padding-block: calc(var(--spacing) * 5);
-    }
-  }
-  .max-lg\:py-15 {
-    @media (width < 64rem) {
-      padding-block: calc(var(--spacing) * 15);
-    }
-  }
-  .max-lg\:pb-15 {
-    @media (width < 64rem) {
-      padding-bottom: calc(var(--spacing) * 15);
     }
   }
   .sm\:grid-cols-2 {
