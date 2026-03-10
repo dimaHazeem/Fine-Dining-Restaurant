@@ -6,8 +6,6 @@
     --font-sans: "Open Sans", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
@@ -186,8 +184,44 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
   .static {
     position: static;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
   }
   .dummy-container {
     margin-inline: auto;
@@ -217,14 +251,26 @@
     display: flex;
     flex-direction: row;
   }
+  .flex {
+    display: flex;
+  }
   .grid {
     display: grid;
   }
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .aspect-4\/5 {
     aspect-ratio: 4/5;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
@@ -256,6 +302,9 @@
   .flex-1 {
     flex: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .nav-items {
     cursor: pointer;
     font-family: var(--font-sans);
@@ -273,6 +322,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -353,6 +405,9 @@
   .bg-\[url\(\.\.\/images\/aboutUs\/video-img\.jpg\)\] {
     background-image: url(../images/aboutUs/video-img.jpg);
   }
+  .bg-\[url\(\.\.\/images\/booking\/Booking-page-title-img\.jpg\)\] {
+    background-image: url(../images/booking/Booking-page-title-img.jpg);
+  }
   .bg-\[url\(\.\.\/images\/ourMenu\/HeaderMenu\.jpg\)\] {
     background-image: url(../images/ourMenu/HeaderMenu.jpg);
   }
@@ -380,6 +435,9 @@
   .bg-fixed {
     background-attachment: fixed;
   }
+  .bg-scroll {
+    background-attachment: scroll;
+  }
   .bg-center {
     background-position: center;
   }
@@ -394,6 +452,9 @@
   }
   .object-contain {
     object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
@@ -463,9 +524,17 @@
   .text-\[61px\] {
     font-size: 61px;
   }
+  .leading-9 {
+    --tw-leading: calc(var(--spacing) * 9);
+    line-height: calc(var(--spacing) * 9);
+  }
   .leading-9\.75 {
     --tw-leading: calc(var(--spacing) * 9.75);
     line-height: calc(var(--spacing) * 9.75);
+  }
+  .leading-17 {
+    --tw-leading: calc(var(--spacing) * 17);
+    line-height: calc(var(--spacing) * 17);
   }
   .leading-17\.75 {
     --tw-leading: calc(var(--spacing) * 17.75);
@@ -490,6 +559,10 @@
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
+  }
+  .tracking-\[8px\] {
+    --tw-tracking: 8px;
+    letter-spacing: 8px;
   }
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
@@ -527,6 +600,10 @@
   }
   .underline-offset-8 {
     text-underline-offset: 8px;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:underline {
     &:hover {
@@ -736,6 +813,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -744,6 +826,7 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
     }
   }
 }
