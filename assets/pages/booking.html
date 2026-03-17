@@ -57,13 +57,96 @@
         </div>
     </header>
     <main>
-        <section>
-            <p class="miniver text-[19px] text-mainColor">Your table</p>
-            <h2 class="text-mainColor CaviarDreams txet-[41px] tracking-[8px] font-bold">RESERVATION</h2>
-            <div>
+        <section class=" my-20">
+            <div class="col items-center dummy-container gap-10">
+                <p class="miniver text-[19px] text-mainColor">Your table</p>
+                <h2 class="text-mainColor CaviarDreams text-[41px] tracking-[8px] font-bold">RESERVATION</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <select name="partySize" id="partySize" class="text-white border border-mainColor w-full">
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                    </select>
+                    <input type="date" class="text-white border border-mainColor w-full">
+                    <select name="resTime" id="resTime" class="text-white border border-mainColor w-full">
+                        <option>7:00 pm</option>
+                        <option>7:30 pm</option>
+                        <option>8:00 pm</option>
+                    </select>
+                    <button type="submit" class="text-white border border-mainColor w-full">
+                        BOOK A TABLE
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="mb-40 mt-70 overflow-hidden">
+            <div class="grid grid-cols-2 max-[1025px]:grid-cols-1 dummy-container">
+                <div class="overflow-hidden w-full flex justify-center">
+                    <div class="grid grid-cols-3 w-225 shrink-0 scale-75 sm:scale-90 md:scale-100 lg:scale-110 origin-top">
+                        <img src="../images/booking/vt (2).webp" class="w-full h-auto">
+                        <img src="../images/booking/vt (3).webp" class="w-full h-auto">
+                        <img src="../images/booking/vt (4).webp" class="w-full h-auto">
+                        <img src="../images/booking/vt (1).webp" class="w-full h-auto">
+                        <img src="../images/booking/vt.webp" class="w-full h-auto">
+                        <img src="../images/booking/vt (5).webp" class="w-full h-auto">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-10">
+                    <p class="miniver text-[19px] text-mainColor">Visit Us</p>
+                    <h2 class="text-mainColor CaviarDreams text-[41px] tracking-[8px] font-bold">
+                        FIND US
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                        <div class="col gap-5 items-center">
+                            <p class="CaviarDreams text-[19px] text-mainColor uppercase">MANHATTAN</p>
+                            <p class="text-white Josefin">71 Madison Ave</p>
+                            <p class="text-white Josefin">914-309-70 , 914-329-21</p>
+                            <p class="text-white Josefin">reservations@example.com</p>
+                        </div>
+                        <div class="col gap-5 items-center">
+                            <p class="CaviarDreams text-[19px] text-mainColor uppercase">MANHATTAN</p>
+                            <p class="text-white Josefin">71 Madison Ave</p>
+                            <p class="text-white Josefin">914-309-70 , 914-329-21</p>
+                            <p class="text-white Josefin">reservations@example.com</p>
+                        </div>
+                        <div class="col gap-5 items-center">
+                            <p class="CaviarDreams text-[19px] text-mainColor uppercase">MANHATTAN</p>
+                            <p class="text-white Josefin">71 Madison Ave</p>
+                            <p class="text-white Josefin">914-309-70 , 914-329-21</p>
+                            <p class="text-white Josefin">reservations@example.com</p>
+                        </div>
+                        <div class="col gap-5 items-center">
+                            <p class="CaviarDreams text-[19px] text-mainColor uppercase">MANHATTAN</p>
+                            <p class="text-white Josefin">71 Madison Ave</p>
+                            <p class="text-white Josefin">914-309-70 , 914-329-21</p>
+                            <p class="text-white Josefin">reservations@example.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="my-40">
+        <div class="col items-center gap-10 dummy-container">
+            <div>
+                <img src="../images/Logo.png" alt="img">
+            </div>
+            <div class="col gap-5 items-center text-center">
+                <p class="text-white Josefin text-[19px]">Bridge Restaurant & Fine dining, 71 Madison Ave</p>
+                <p class="text-white Josefin text-[19px]">10013 New York,914-309-7030,bridge@example.com</p>
+                <p class="text-white Josefin text-[19px]">Open: 09:00 am – 01:00 pm</p>
+            </div>
+            <div class="row gap-5 max-[481px]:col items-center">
+                <a href="https://www.instagram.com/qodeinteractive/"
+                    class="text-white Josefin text-[19px] decoration-double underline-offset-8 underline decoration-mainColor">Instagram</a>
+                <a href="https://x.com/QodeInteractive"
+                    class="text-white Josefin text-[19px] decoration-double underline-offset-8 underline decoration-mainColor">Twitter</a>
+                <a href="https://www.facebook.com/QodeInteractive/"
+                    class="text-white Josefin text-[19px] decoration-double underline-offset-8 underline decoration-mainColor">Facebook</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
