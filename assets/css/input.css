@@ -14,16 +14,10 @@
 
 .miniver {
     font-family: Miniver;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 28px;
 }
 
 .Josefin {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 29px;
 }
 
 .Metropolis {
@@ -32,9 +26,6 @@
 
 .OpenSans-CondLight {
     font-family: "OpenSans-CondLight", sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 29px;
 }
 
 @utility row {
