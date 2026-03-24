@@ -27,19 +27,20 @@
 </head>
 
 <body class="bg-mainBG">
-    <header class="conatiner mx-auto h-screen">
-        <div class="bg-[url(../images/booking/Booking-page-title-img.jpg)] h-[80%] bg-cover">
+    <header class="mx-auto h-screen">
+        <div class="bg-[url(../images/booking/Booking-page-title-img.jpg)] h-[80%] bg-cover bg-fixed">
             <nav class="row items-center justify-between px-7 border-b-secColor border-b">
                 <button class="p-5 cursor-pointer">
                     <img src="../images/Logo.png" class="bg-auto" alt="">
                 </button>
                 <ul class="row items-center gap-5 hidden md:flex">
-                    <a href="../../index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
-                    <a href="./ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
-                    <a href="../pages/aboutUs.html" class="nav-items tracking-widest OpenSans-CondLight">Pages</a>
-                    <a href="../pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
-                    <a href="../pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
-                    <li class="nav-items tracking-widest OpenSans-CondLight">Contact Us</li>
+                    <ul class="row items-center gap-5 hidden md:flex">
+                        <a href="../../index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
+                        <a href="./ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
+                        <a href="../pages/aboutUs.html" class="nav-items tracking-widest OpenSans-CondLight">Pages</a>
+                        <a href="../pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
+                        <a href="../pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
+                    </ul>
                 </ul>
                 <button class="p-5 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
@@ -61,29 +62,34 @@
             <div class="col items-center dummy-container gap-10">
                 <p class="miniver text-[19px] text-mainColor">Your table</p>
                 <h2 class="text-mainColor CaviarDreams text-[41px] tracking-[8px] font-bold">RESERVATION</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                    <select name="partySize" id="partySize" class="text-white border border-mainColor w-full">
-                        <option>1 Person</option>
-                        <option>2 People</option>
-                        <option>3 People</option>
-                        <option>4 People</option>
+                <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full max-w-4xl">
+                    <select name="partySize" id="partySize"
+                        class="text-white border border-mainColor pt-[7px] pb-[3px] px-[23px] h-[50px] w-full appearance-none">
+                        <option class="text-black">1 Person</option>
+                        <option class="text-black">2 People</option>
+                        <option class="text-black">3 People</option>
+                        <option class="text-black">4 People</option>
                     </select>
-                    <input type="date" value="2026-03-17" class="text-white border border-mainColor w-full">
-                    <select name="resTime" id="resTime" class="text-white border border-mainColor w-full">
-                        <option>7:00 pm</option>
-                        <option>7:30 pm</option>
-                        <option>8:00 pm</option>
+                    <input type="date" value="2026-03-17"
+                        class="text-white border border-mainColor w-full pt-[7px] pb-[3px] px-[23px] h-[50px]">
+                    <select name="resTime" id="resTime"
+                        class="text-white border border-mainColor pt-[7px] pb-[3px] px-[23px] h-[50px] w-full appearance-none">
+                        <option class="text-black">7:00 pm</option>
+                        <option class="text-black">7:30 pm</option>
+                        <option class="text-black">8:00 pm</option>
                     </select>
-                    <button type="submit" class="text-white border border-mainColor w-full">
+                    <button type="submit"
+                        class="text-white border border-mainColor pt-[7px] pb-[3px] px-[23px] h-[50px] w-full">
                         BOOK A TABLE
                     </button>
-                </div>
+                </form>
             </div>
         </section>
         <section class="mb-40 mt-70 overflow-hidden">
             <div class="grid grid-cols-2 max-[1025px]:grid-cols-1 max-[1025px]:gap-10 dummy-container">
                 <div class="overflow-hidden w-full flex justify-center">
-                    <div class="grid grid-cols-3 w-225 shrink-0 scale-75 sm:scale-90 md:scale-100 lg:scale-110 origin-top">
+                    <div
+                        class="grid grid-cols-3 w-225 shrink-0 scale-75 sm:scale-90 md:scale-100 lg:scale-110 origin-top">
                         <img src="../images/booking/vt (2).webp" class="w-full h-auto">
                         <img src="../images/booking/vt (3).webp" class="w-full h-auto">
                         <img src="../images/booking/vt (4).webp" class="w-full h-auto">
