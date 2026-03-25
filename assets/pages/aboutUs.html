@@ -35,20 +35,116 @@
                 </button>
                 <ul class="row items-center gap-5 hidden md:flex">
                     <a href="../../index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
-                    <a href="./ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
-                    <a href="../pages/ourChef.html" class="nav-items tracking-widest OpenSans-CondLight">Pages</a>
+                    <a href="../pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
+                    <div class="relative">
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                            data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
+              transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
+                            Pages
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownDelay"
+                            class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                            <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton">
+                                <li>
+                                    <a href="../pages/aboutUs.html"
+                                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/ourChef.html"
+                                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
+                                        Chefs</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/booking.html"
+                                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
+                                        Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a href="../pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
                     <a href="../pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
                 </ul>
-                <button class="p-5 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
-                        class="w-10 h-auto stroke-secColor stroke-[1px] ">
-                        <line y1="7.6" x2="24" y2="7.6" />
-                        <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
-                        <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
-                        <line x1="13" y1="17.6" x2="37" y2="17.6" />
-                    </svg>
-                </button>
+                <div>
+                    <a href="../pages/signIn.html" class="p-5 max-md:hidden">
+                        <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
+                    </a>
+                    <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="md:hidden inline-flex items-center justify-center px-2 py-2
+         transition duration-200 hover:bg-white/10 focus:bg-neutral-primary focus:text-white focus:outline-none"
+                        type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
+                            class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
+                            <line y1="7.6" x2="24" y2="7.6" />
+                            <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
+                            <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
+                            <line x1="13" y1="17.6" x2="37" y2="17.6" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="multi-dropdown"
+                        class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                            <li>
+                                <a href="../../index.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
+                            </li>
+                            <li>
+                                <a href="../pages/ourMenu.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
+                                    menu</a>
+                            </li>
+                            <li>
+                                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                    data-dropdown-placement="right-start" type="button"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
+                                    pages
+                                    <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <div id="doubleDropdown"
+                                    class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                                    <ul class="p-2 text-sm text-body font-medium"
+                                        aria-labelledby="doubleDropdownButton">
+                                        <li>
+                                            <a href="../pages/aboutUs.html"
+                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
+                                                us</a>
+                                        </li>
+                                        <li>
+                                            <a href="../pages/ourChef.html"
+                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
+                                                chefs</a>
+                                        </li>
+                                        <li>
+                                            <a href="../pages/booking.html"
+                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
+                                                page</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../pages/portfolio.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="../pages/blog.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
+                            </li>
+                            <li>
+                                <a href="../pages/signIn.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
+                                    in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <div class="col items-center justify-center gap-15 h-full">
                 <p class="CaviarDreams text-mainColor text-[47px] uppercase tracking-widest">About Us
@@ -57,61 +153,68 @@
         </div>
     </header>
 
-    <section>
-        <div class="dummy-container items-center justify-items-center text-center gap-20 grid lg:grid-cols-3 grid-cols-1">
-            <div>
-                <img src="../images/circle1.png" alt="img">
-            </div>
-            <div class="col gap-10 items-center max-lg:max-w-lg">
-                <p class="text-mainColor miniver text-[19px]">Restaurant life</p>
-                <p class="text-mainColor CaviarDreams text-[48px]">ABOUT US</p>
-                <div class="col gap-5">
-                    <p class="text-white Josefin">Lorem ipsum dolor sit amet, consecte turn se adipisicing elit, sed do
-                        eiusmod tempor ens incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exerci reprehenderit in voluptate velit esse cillu sint occaecat error sit volu.</p>
-                    <p class="text-white Josefin">Cupidatat non proident, sunt in culpa qui cia deserunt mollit anim id
-                        est
-                        laborum. Sed utsa tat monullamco laboris nisi ut aliquip exe ne com odoconsequat. Duis aute
-                        irure
-                        dolor in per spiciamt vsun.</p>
-                    <p class="text-white Josefin">Cupidatat non proident, sunt in culpa qui cia deserunt mollit anim id
-                        est
-                        laborum. Sed utsa tat monullamco laboris nisi ut aliquip exe ne com odoconsequat. Duis aute
-                        irure
-                        dolor in per spiciamt vsun.</p>
+    <main>
+        <section>
+            <div
+                class="dummy-container items-center justify-items-center text-center gap-20 grid lg:grid-cols-3 grid-cols-1">
+                <div>
+                    <img src="../images/circle1.png" alt="img">
                 </div>
-                <button
-                    class="text-white OpenSans-CondLight text-[14px] decoration-double underline-offset-8 underline decoration-mainColor uppercase tracking-widest">read
-                    more</button>
+                <div class="col gap-10 items-center max-lg:max-w-lg">
+                    <p class="text-mainColor miniver text-[19px]">Restaurant life</p>
+                    <p class="text-mainColor CaviarDreams text-[48px]">ABOUT US</p>
+                    <div class="col gap-5">
+                        <p class="text-white Josefin">Lorem ipsum dolor sit amet, consecte turn se adipisicing elit, sed
+                            do
+                            eiusmod tempor ens incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exerci reprehenderit in voluptate velit esse cillu sint occaecat error sit volu.</p>
+                        <p class="text-white Josefin">Cupidatat non proident, sunt in culpa qui cia deserunt mollit anim
+                            id
+                            est
+                            laborum. Sed utsa tat monullamco laboris nisi ut aliquip exe ne com odoconsequat. Duis aute
+                            irure
+                            dolor in per spiciamt vsun.</p>
+                        <p class="text-white Josefin">Cupidatat non proident, sunt in culpa qui cia deserunt mollit anim
+                            id
+                            est
+                            laborum. Sed utsa tat monullamco laboris nisi ut aliquip exe ne com odoconsequat. Duis aute
+                            irure
+                            dolor in per spiciamt vsun.</p>
+                    </div>
+                    <button
+                        class="text-white OpenSans-CondLight text-[14px] decoration-double underline-offset-8 underline decoration-mainColor uppercase tracking-widest">read
+                        more</button>
+                </div>
+                <div>
+                    <img src="../images/aboutUs/secImageSec2.jpg" alt="img">
+                </div>
             </div>
-            <div>
-                <img src="../images/aboutUs/secImageSec2.jpg" alt="img">
+        </section>
+
+        <section class="my-20">
+            <div class="bg-[url(../images/aboutUs/video-img.jpg)] h-96 bg-fixed bg-cover bg-center"></div>
+        </section>
+
+        <section class="my-20">
+            <div class="col items-center text-center gap-10 dummy-container">
+                <img src="../images/quote-icon.png" alt="">
+                <p class="text-[#afb8b8] miniver max-w-lg">Duis aute irure dolor. Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisic sed do eiusmod tempor incidid sens as out labore et. Ut enim ad minim venia quis nostrud
+                    exercitation co laboris nisi ut aliquip ex ea commodo conse.</p>
+                <p class="text-mainColor uppercase tracking-widest CaviarDreams font-bold">Robert Chang</p>
+                <div class="row items-center justify-between gap-10">
+                    <button
+                        class="cursor-pointer text-mainColor decoration-double underline-offset-3 underline decoration-mainColor">1</button>
+                    <button
+                        class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">2</button>
+                    <button
+                        class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">3</button>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="my-20">
-        <div class="bg-[url(../images/aboutUs/video-img.jpg)] h-96 bg-fixed bg-cover bg-center"></div>
-    </section>
-
-    <section class="my-20">
-        <div class="col items-center text-center gap-10 dummy-container">
-            <img src="../images/quote-icon.png" alt="">
-            <p class="text-[#afb8b8] miniver max-w-lg">Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur
-                adipisic sed do eiusmod tempor incidid sens as out labore et. Ut enim ad minim venia quis nostrud
-                exercitation co laboris nisi ut aliquip ex ea commodo conse.</p>
-            <p class="text-mainColor uppercase tracking-widest CaviarDreams font-bold">Robert Chang</p>
-            <div class="row items-center justify-between gap-10">
-                <button
-                    class="cursor-pointer text-mainColor decoration-double underline-offset-3 underline decoration-mainColor">1</button>
-                <button
-                    class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">2</button>
-                <button
-                    class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">3</button>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer class="my-40">
         <div class="col items-center gap-10 dummy-container">
             <div>
@@ -132,6 +235,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
 
 </html>

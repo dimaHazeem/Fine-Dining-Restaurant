@@ -1,16 +1,16 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
+    "flowbite": "^4.0.1",
     "tailwindcss": "^4.1.18"
   },
   "name": "fine-dining-restaurant",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css" : "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "keywords": [],
   "author": "",

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +25,7 @@
     <!--TailwindCss-->
     <link href="../css/output.css" rel="stylesheet">
 </head>
+
 <body class="bg-mainBG">
     <header class="conatiner mx-auto">
         <nav class="row items-center justify-between px-7 border-b-secColor border-b">
@@ -32,20 +34,115 @@
             </button>
             <ul class="row items-center gap-5 hidden md:flex">
                 <a href="../../index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
-                <a href="./ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
-                <a href="../pages/aboutUs.html" class="nav-items tracking-widest OpenSans-CondLight">Pages</a>
+                <a href="../pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
+                <div class="relative">
+                    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                        data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
+              transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
+                        Pages
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownDelay"
+                        class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton">
+                            <li>
+                                <a href="../pages/aboutUs.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="../pages/ourChef.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
+                                    Chefs</a>
+                            </li>
+                            <li>
+                                <a href="../pages/booking.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
+                                    Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <a href="../pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
                 <a href="../pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
             </ul>
-            <button class="p-5 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
-                    class="w-10 h-auto stroke-secColor stroke-[1px] ">
-                    <line y1="7.6" x2="24" y2="7.6" />
-                    <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
-                    <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
-                    <line x1="13" y1="17.6" x2="37" y2="17.6" />
-                </svg>
-            </button>
+            <div>
+                <a href="../pages/signIn.html" class="p-5 max-md:hidden">
+                    <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
+                </a>
+                <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="md:hidden inline-flex items-center justify-center px-2 py-2
+         transition duration-200 hover:bg-white/10 focus:bg-neutral-primary focus:text-white focus:outline-none"
+                    type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
+                        class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
+                        <line y1="7.6" x2="24" y2="7.6" />
+                        <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
+                        <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
+                        <line x1="13" y1="17.6" x2="37" y2="17.6" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="multi-dropdown"
+                    class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                    <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                        <li>
+                            <a href="../../index.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
+                        </li>
+                        <li>
+                            <a href="../pages/ourMenu.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
+                                menu</a>
+                        </li>
+                        <li>
+                            <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                data-dropdown-placement="right-start" type="button"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
+                                pages
+                                <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </button>
+                            <div id="doubleDropdown"
+                                class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="doubleDropdownButton">
+                                    <li>
+                                        <a href="../pages/aboutUs.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
+                                            us</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pages/ourChef.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
+                                            chefs</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pages/booking.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
+                                            page</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../pages/portfolio.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
+                        </li>
+                        <li>
+                            <a href="../pages/blog.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
+                        </li>
+                        <li>
+                            <a href="../pages/signIn.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
+                                in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -57,13 +154,14 @@
                 <p class="text-white Josefin txet-[18px] font-light">Blog Right Sidebar</p>
             </div>
         </section>
-        <section class="grid grid-cols-4 max-[1025px]:grid-cols-3 gap-10 dummy-container">
+        <section class="grid grid-cols-1 lg:grid-cols-4 gap-10 dummy-container">
             <!--Left Side-->
             <div class="col-span-3 col gap-40">
                 <div class="col gap-5">
                     <img src="../images/blog/headerImg.jpg" alt="img">
                     <div class="col gap-1">
-                        <h2 class="tracking-[7.68px] CaviarDreams text-mainColor text-[36px] font-medium uppercase">Elegant food</h2>
+                        <h2 class="tracking-[7.68px] CaviarDreams text-mainColor text-[36px] font-medium uppercase">
+                            Elegant food</h2>
                         <div>
                             <span class="Josefin text-[19px] font-medium text-white">Posted at 13:45h in</span>
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;Restaurant</a>
@@ -73,24 +171,31 @@
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;2 Comments</a>
                             <span class="text-white font-bold text-[25px]">.</span>
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;Share</a>
-                        </div>   
+                        </div>
                     </div>
-                    <p class="Josefin text-[19px] font-light text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor met dolore magna
-                         sens aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori nisi ut aliquip ex ea commodo 
-                         consequat. Duis auteirm ure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupin datat non proident tusunt.Mollit anim id est laborum. Sed...</p>
+                    <p class="Josefin text-[19px] font-light text-white">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt utlabor met dolore magna
+                        sens aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori nisi ut aliquip
+                        ex ea commodo
+                        consequat. Duis auteirm ure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.
+                        Excepteur sint occaecat cupin datat non proident tusunt.Mollit anim id est laborum. Sed...</p>
                     <a href="" class="text-white text-[14px] OpenSans-CondLight font-light uppercase tracking-[5.76px]
-                                       decoration-double underline-offset-5 underline decoration-mainColor">read more</a>
+                                       decoration-double underline-offset-5 underline decoration-mainColor">read
+                        more</a>
                 </div>
                 <div class="bg-secBG col justify-center items-center gap-[22px] p-[85px]">
                     <i class="fa-solid fa-quote-right text-mainColor text-[36px]"></i>
-                    <p class="miniver text-[22px] font-medium text-[#aeb8b8] text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur delectus commodi necessitatibus velit architecto est.</p>
+                    <p class="miniver text-[22px] font-medium text-[#aeb8b8] text-center">Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Consequatur delectus commodi necessitatibus velit architecto est.
+                    </p>
                     <p class="text-white text-[19px] Josefin font-light">Food Inspiration</p>
                 </div>
                 <div class="col gap-5">
                     <img src="../images/blog/post-img-3 (1).jpg" alt="img">
                     <div class="col gap-1">
-                        <h2 class="tracking-[7.68px] CaviarDreams text-mainColor text-[36px] font-medium uppercase">Foody Weekend</h2>
+                        <h2 class="tracking-[7.68px] CaviarDreams text-mainColor text-[36px] font-medium uppercase">
+                            Foody Weekend</h2>
                         <div>
                             <span class="Josefin text-[19px] font-medium text-white">Posted at 13:37h in</span>
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;Restaurant</a>
@@ -100,23 +205,28 @@
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;0 Comments</a>
                             <span class="text-white font-bold text-[25px]">.</span>
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;Share</a>
-                        </div>   
+                        </div>
                     </div>
-                    <p class="Josefin text-[19px] font-light text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor met dolore magna
-                         sens aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori nisi ut aliquip ex ea commodo 
-                         consequat. Duis auteirm ure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupin datat non proident tusunt.Mollit anim id est laborum. Sed...</p>
+                    <p class="Josefin text-[19px] font-light text-white">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt utlabor met dolore magna
+                        sens aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori nisi ut aliquip
+                        ex ea commodo
+                        consequat. Duis auteirm ure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.
+                        Excepteur sint occaecat cupin datat non proident tusunt.Mollit anim id est laborum. Sed...</p>
                     <a href="" class="text-white text-[14px] OpenSans-CondLight font-light uppercase tracking-[5.76px]
-                                       decoration-double underline-offset-5 underline decoration-mainColor">read more</a>
-                </div>   
+                                       decoration-double underline-offset-5 underline decoration-mainColor">read
+                        more</a>
+                </div>
                 <div class="bg-secBG col justify-center items-center gap-[22px] p-[85px]">
                     <i class="link_mark fa fa-link pull-left text-mainColor text-[36px]"></i>
                     <p class="text-[#bebebe] text-[22px] miniver font-light">The Royal Charm</p>
-                </div>  
+                </div>
                 <div class="col gap-5">
                     <img src="../images/blog/Blog-list-img-3.jpg" alt="img">
                     <div class="col gap-1">
-                        <h2 class="tracking-[7.68px] CaviarDreams text-mainColor text-[36px] font-medium uppercase">Fine Dining Space</h2>
+                        <h2 class="tracking-[7.68px] CaviarDreams text-mainColor text-[36px] font-medium uppercase">Fine
+                            Dining Space</h2>
                         <div>
                             <span class="Josefin text-[19px] font-medium text-white">Posted at 13:29h in</span>
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;Restaurant</a>
@@ -126,37 +236,54 @@
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;0 Comments</a>
                             <span class="text-white font-bold text-[25px]">.</span>
                             <a href="" class="Josefin text-[19px] font-light text-[#bebebe]">&nbsp;Share</a>
-                        </div>   
+                        </div>
                     </div>
-                    <p class="Josefin text-[19px] font-light text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor met dolore magna
-                         sens aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori nisi ut aliquip ex ea commodo 
-                         consequat. Duis auteirm ure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupin datat non proident tusunt.Mollit anim id est laborum. Sed...</p>
+                    <p class="Josefin text-[19px] font-light text-white">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt utlabor met dolore magna
+                        sens aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori nisi ut aliquip
+                        ex ea commodo
+                        consequat. Duis auteirm ure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.
+                        Excepteur sint occaecat cupin datat non proident tusunt.Mollit anim id est laborum. Sed...</p>
                     <a href="" class="text-white text-[14px] OpenSans-CondLight font-light uppercase tracking-[5.76px]
-                                       decoration-double underline-offset-5 underline decoration-mainColor">read more</a>
-                </div>              
+                                       decoration-double underline-offset-5 underline decoration-mainColor">read
+                        more</a>
+                </div>
             </div>
             <!--Right Side-->
-            <div class="max-[1025px]:col-span-3 col gap-15">
+            <div class="max-lg:col-span-3 col gap-15">
                 <div class="col gap-2">
                     <p class="CaviarDreams text-[17px] font-bold text-mainColor uppercase tracking-[7.68px]">about</p>
-                    <p class="text-white text-[19px] Josefin font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium delectus iste dolores distinctio. Explicabo reiciendis dolores quidem omnis laborum iste?</p>
+                    <p class="text-white text-[19px] Josefin font-light">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Laudantium delectus iste dolores distinctio. Explicabo reiciendis dolores
+                        quidem omnis laborum iste?</p>
                 </div>
                 <div class="col gap-2">
-                    <p class="CaviarDreams text-[17px] font-bold text-mainColor uppercase tracking-[7.68px]">categories</p>
+                    <p class="CaviarDreams text-[17px] font-bold text-mainColor uppercase tracking-[7.68px]">categories
+                    </p>
                     <div class="col gap-2">
-                        <a href="" class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Home</a>
-                        <a href="" class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Menu</a>
-                        <a href="" class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Recipes</a>
-                        <a href="" class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Restaurant</a>
+                        <a href=""
+                            class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Home</a>
+                        <a href=""
+                            class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Menu</a>
+                        <a href=""
+                            class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Recipes</a>
+                        <a href=""
+                            class="text-white Josefin text-[19px] font-light hover:text-mainColor duration-300">Restaurant</a>
                     </div>
                 </div>
                 <div class="col gap-2">
                     <p class="CaviarDreams text-[17px] font-bold text-mainColor uppercase tracking-[7.68px]">Gallery</p>
-                    <div class="grid grid-cols-3 max-[600px]:grid-cols-2 gap-2 justify-items-center">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 justify-items-center">
+                        <a href="https://www.instagram.com/qodeinteractive/">
                             <img src="../images/blog/insta1.jpg" alt="img" class="object-cover">
+                        </a>
+                        <a href="https://www.instagram.com/qodeinteractive/">
                             <img src="../images/blog/insta2.jpg" alt="img" class="object-cover">
+                        </a>
+                        <a href="https://www.instagram.com/qodeinteractive/">
                             <img src="../images/blog/insta3.jpg" alt="img" class="object-cover">
+                        </a>
                         <a href="https://www.instagram.com/qodeinteractive/">
                             <img src="../images/blog/insta4.jpg" alt="img" class="object-cover">
                         </a>
@@ -170,21 +297,23 @@
                 </div>
                 <div class="col gap-2">
                     <p class="CaviarDreams text-[17px] font-bold text-mainColor uppercase tracking-[7.68px]">Tags</p>
-                    <div>  
-                        <a href="" class="text-[19px] font-light Josefin text-white hover:text-mainColor duration-300">Dinner,</a>
-                        <a href="" class="text-[19px] font-light Josefin text-white hover:text-mainColor duration-300">Food,</a>
-                        <a href="" class="text-[19px] font-light Josefin text-white hover:text-mainColor duration-300">Lunch</a>
+                    <div>
+                        <a href=""
+                            class="text-[19px] font-light Josefin text-white hover:text-mainColor duration-300">Dinner,</a>
+                        <a href=""
+                            class="text-[19px] font-light Josefin text-white hover:text-mainColor duration-300">Food,</a>
+                        <a href=""
+                            class="text-[19px] font-light Josefin text-white hover:text-mainColor duration-300">Lunch</a>
                     </div>
                 </div>
                 <div class="col gap-2">
                     <p class="CaviarDreams text-[17px] font-bold text-mainColor uppercase tracking-[7.68px]">search</p>
                     <form action="search" class="border border-mainColor row justify-between p-5">
-                        <input type="text" name="search" placeholder="Type here" 
-                            class="placeholder:text-white placeholder:Josefin 
-                            placeholder:text-[19px] placeholder:font-light text-white outline-none">
-                            <button type="submit">
-                                <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
-                            </button>   
+                        <input type="text" name="search" placeholder="Type here" class="placeholder:text-white placeholder:Josefin 
+                            placeholder:text-[19px] placeholder:font-light text-white outline-none bg-transparent border-none">
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -210,5 +339,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
+
 </html>
