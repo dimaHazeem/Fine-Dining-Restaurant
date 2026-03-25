@@ -34,21 +34,121 @@
             </button>
             <ul class="row items-center gap-5 hidden md:flex">
                 <a href="../../index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
-                <a href="./ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
-                <a href="../pages/ourChef.html" class="nav-items tracking-widest OpenSans-CondLight">Pages</a>
+                <a href="../pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
+                <div class="relative">
+                    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                        data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
+              transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
+                        Pages
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownDelay"
+                        class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton">
+                            <li>
+                                <a href="../pages/aboutUs.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="../pages/ourChef.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
+                                    Chefs</a>
+                            </li>
+                            <li>
+                                <a href="../pages/booking.html"
+                                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
+                                    Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <a href="../pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
                 <a href="../pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
             </ul>
-            <a href="./signIn.html" class="p-5">
-                <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
-            </a>
+            <div>
+                <a href="../pages/signIn.html" class="p-5 max-md:hidden">
+                    <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
+                </a>
+                <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="md:hidden inline-flex items-center justify-center px-2 py-2
+         transition duration-200 hover:bg-white/10 focus:bg-neutral-primary focus:text-white focus:outline-none"
+                    type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
+                        class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
+                        <line y1="7.6" x2="24" y2="7.6" />
+                        <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
+                        <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
+                        <line x1="13" y1="17.6" x2="37" y2="17.6" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="multi-dropdown"
+                    class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                    <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                        <li>
+                            <a href="../../index.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
+                        </li>
+                        <li>
+                            <a href="../pages/ourMenu.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
+                                menu</a>
+                        </li>
+                        <li>
+                            <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                data-dropdown-placement="right-start" type="button"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
+                                pages
+                                <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </button>
+                            <div id="doubleDropdown"
+                                class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="doubleDropdownButton">
+                                    <li>
+                                        <a href="../pages/aboutUs.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
+                                            us</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pages/ourChef.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
+                                            chefs</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pages/booking.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
+                                            page</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../pages/portfolio.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
+                        </li>
+                        <li>
+                            <a href="../pages/blog.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
+                        </li>
+                        <li>
+                            <a href="../pages/signIn.html"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
+                                in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
             <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                <img src="../images/Logo.png"
-                    alt="Your Company" class="mx-auto h-10 w-auto" />
+                <img src="../images/Logo.png" alt="Your Company" class="mx-auto h-10 w-auto" />
                 <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-white">Sign in to your account
                 </h2>
             </div>
@@ -93,6 +193,27 @@
             </div>
         </div>
     </main>
+    <footer class="my-40">
+        <div class="col items-center gap-10 dummy-container">
+            <div>
+                <img src="../images/Logo.png" alt="img">
+            </div>
+            <div class="col gap-5 items-center text-center">
+                <p class="text-white Josefin text-[19px]">Bridge Restaurant & Fine dining, 71 Madison Ave</p>
+                <p class="text-white Josefin text-[19px]">10013 New York,914-309-7030,bridge@example.com</p>
+                <p class="text-white Josefin text-[19px]">Open: 09:00 am – 01:00 pm</p>
+            </div>
+            <div class="row gap-5 max-[481px]:col items-center">
+                <a href="https://www.instagram.com/qodeinteractive/"
+                    class="text-white Josefin text-[19px] decoration-double underline-offset-8 underline decoration-mainColor">Instagram</a>
+                <a href="https://x.com/QodeInteractive"
+                    class="text-white Josefin text-[19px] decoration-double underline-offset-8 underline decoration-mainColor">Twitter</a>
+                <a href="https://www.facebook.com/QodeInteractive/"
+                    class="text-white Josefin text-[19px] decoration-double underline-offset-8 underline decoration-mainColor">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
 
 </html>
