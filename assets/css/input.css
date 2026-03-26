@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "flowbite";
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
 
 @theme {
     --color-mainColor: #c9ab81;
