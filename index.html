@@ -22,156 +22,432 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <!--TailwindCss-->
   <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-mainBG">
-  <header class="conatiner mx-auto">
-    <div class="bg-[url(./../images/HeroBackground.jpg)] h-screen bg-cover bg-center">
-      <nav class="row items-center justify-between px-7 border-b-secColor border-b">
-        <button class="p-5 cursor-pointer">
-          <img src="./assets/images/Logo.png" class="bg-auto" alt="">
-        </button>
-        <ul class="row items-center gap-5 hidden md:flex">
-          <a href="./index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
-          <a href="./assets/pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our Menu</a>
-          <div class="relative">
-            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
-              data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
-              transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
-              Pages
+  <header class="mx-auto">
+    <div class="swiper h-screen">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide bg-[url(./../images/HeroBackground.jpg)] h-screen bg-cover bg-center">
+          <nav class="row items-center justify-between px-7 border-b-secColor border-b">
+            <button class="p-5 cursor-pointer">
+              <img src="./assets/images/Logo.png" class="bg-auto" alt="">
             </button>
-            <!-- Dropdown menu -->
-            <div id="dropdownDelay"
-              class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
-              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton">
-                <li>
-                  <a href="./assets/pages/aboutUs.html"
-                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
-                    Us</a>
-                </li>
-                <li>
-                  <a href="./assets/pages/ourChef.html"
-                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
-                    Chefs</a>
-                </li>
-                <li>
-                  <a href="./assets/pages/booking.html"
-                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
-                    Page</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="./assets/pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
-          <a href="./assets/pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
-        </ul>
-        <div>
-          <a href="./assets/pages/signIn.html" class="p-5 max-md:hidden">
-            <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
-          </a>
-          <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="md:hidden inline-flex items-center justify-center px-2 py-2
-         transition duration-200
-         hover:bg-white/10
-         focus:bg-neutral-primary focus:text-white focus:outline-none" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
-              class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
-              <line y1="7.6" x2="24" y2="7.6" />
-              <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
-              <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
-              <line x1="13" y1="17.6" x2="37" y2="17.6" />
-            </svg>
-          </button>
-          <!-- Dropdown menu -->
-          <div id="multi-dropdown"
-            class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
-            <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
-              <li>
-                <a href="./index.html"
-                  class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
-              </li>
-              <li>
-                <a href="./assets/pages/ourMenu.html"
-                  class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
-                  menu</a>
-              </li>
-              <li>
-                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
-                  data-dropdown-placement="right-start" type="button"
-                  class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
-                  pages
-                  <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m9 5 7 7-7 7" />
-                  </svg>
+            <ul class="row items-center gap-5 hidden md:flex">
+              <a href="./index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
+              <a href="./assets/pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our
+                Menu</a>
+              <div class="relative">
+                <button id="dropdownDelayButton-1" data-dropdown-toggle="dropdownDelay-1" data-dropdown-delay="500"
+                  data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
+                transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
+                  Pages
                 </button>
-                <div id="doubleDropdown"
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay-1"
                   class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
-                  <ul class="p-2 text-sm text-body font-medium" aria-labelledby="doubleDropdownButton">
+                  <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton-1">
                     <li>
                       <a href="./assets/pages/aboutUs.html"
-                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
-                        us</a>
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
+                        Us</a>
                     </li>
                     <li>
                       <a href="./assets/pages/ourChef.html"
-                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
-                        chefs</a>
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
+                        Chefs</a>
                     </li>
                     <li>
                       <a href="./assets/pages/booking.html"
-                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
-                        page</a>
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
+                        Page</a>
                     </li>
                   </ul>
                 </div>
-              </li>
-              <li>
-                <a href="./assets/pages/portfolio.html"
-                  class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
-              </li>
-              <li>
-                <a href="./assets/pages/blog.html"
-                  class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
-              </li>
-              <li>
-                <a href="./assets/pages/signIn.html"
-                  class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
-                  in</a>
-              </li>
+              </div>
+              <a href="./assets/pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
+              <a href="./assets/pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
             </ul>
+            <div>
+              <a href="./assets/pages/signIn.html" class="p-5 max-md:hidden">
+                <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
+              </a>
+              <button id="multiLevelDropdownButton-1" data-dropdown-toggle="multi-dropdown-1" class="md:hidden inline-flex items-center justify-center px-2 py-2
+            transition duration-200
+            hover:bg-white/10
+            focus:bg-neutral-primary focus:text-white focus:outline-none" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
+                  class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
+                  <line y1="7.6" x2="24" y2="7.6" />
+                  <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
+                  <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
+                  <line x1="13" y1="17.6" x2="37" y2="17.6" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="multi-dropdown-1"
+                class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton-1">
+                  <li>
+                    <a href="./index.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/ourMenu.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
+                      menu</a>
+                  </li>
+                  <li>
+                    <button id="doubleDropdownButton-1" data-dropdown-toggle="doubleDropdown-1"
+                      data-dropdown-placement="right-start" type="button"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
+                      pages
+                      <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m9 5 7 7-7 7" />
+                      </svg>
+                    </button>
+                    <div id="doubleDropdown-1"
+                      class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                      <ul class="p-2 text-sm text-body font-medium" aria-labelledby="doubleDropdownButton-1">
+                        <li>
+                          <a href="./assets/pages/aboutUs.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
+                            us</a>
+                        </li>
+                        <li>
+                          <a href="./assets/pages/ourChef.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
+                            chefs</a>
+                        </li>
+                        <li>
+                          <a href="./assets/pages/booking.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
+                            page</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/portfolio.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/blog.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/signIn.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
+                      in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="col items-center justify-center gap-10 h-full dummy-container">
+            <p class="miniver text-mainColor hidden lg:block">Welcom to our delicious corner</p>
+            <div class="row items-center justify-between gap-5">
+              <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+              <p
+                class="uppercase text-center text-mainColor Metropolis tracking-widest text-[36px] md:text-[60px] lg:text-[96px]">
+                The Best Dishes</p>
+              <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+            </div>
+            <p class="text-white max-w-md text-center Josefin font-light text-[23px]">We have a proper passion
+              for cooking.
+              Love is the secret
+              ingredient
+              that makes all our meals taste better and magical.</p>
+            <button
+              class="cursor-pointer uppercase px-9 py-2 OpenSans-CondLight text-white border border-mainColor tracking-widest">
+              <a href="./assets/pages/portfolio.html">view more</a></button>
           </div>
         </div>
-      </nav>
-      <div class="col items-center justify-center gap-10 h-full">
-        <p class="miniver text-mainColor hidden lg:block">Welcom to our delicious corner</p>
-        <div class="row items-center justify-between gap-5">
-          <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
-          <p
-            class="uppercase text-center text-mainColor Metropolis tracking-widest text-[36px] md:text-[60px] lg:text-[96px]">
-            The Best Dishes</p>
-          <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+        <div class="swiper-slide bg-[url(./../images/bg-img2.jpg)] h-screen bg-cover bg-center">
+          <nav class="row items-center justify-between px-7 border-b-secColor border-b">
+            <button class="p-5 cursor-pointer">
+              <img src="./assets/images/Logo.png" class="bg-auto" alt="">
+            </button>
+            <ul class="row items-center gap-5 hidden md:flex">
+              <a href="./index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
+              <a href="./assets/pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our
+                Menu</a>
+              <div class="relative">
+                <button id="dropdownDelayButton-2" data-dropdown-toggle="dropdownDelay-2" data-dropdown-delay="500"
+                  data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
+              transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
+                  Pages
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay-2"
+                  class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                  <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton-2">
+                    <li>
+                      <a href="./assets/pages/aboutUs.html"
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
+                        Us</a>
+                    </li>
+                    <li>
+                      <a href="./assets/pages/ourChef.html"
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
+                        Chefs</a>
+                    </li>
+                    <li>
+                      <a href="./assets/pages/booking.html"
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
+                        Page</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="./assets/pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
+              <a href="./assets/pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
+            </ul>
+            <div>
+              <a href="./assets/pages/signIn.html" class="p-5 max-md:hidden">
+                <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
+              </a>
+              <button id="multiLevelDropdownButton-2" data-dropdown-toggle="multi-dropdown-2" class="md:hidden inline-flex items-center justify-center px-2 py-2
+         transition duration-200
+         hover:bg-white/10
+         focus:bg-neutral-primary focus:text-white focus:outline-none" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
+                  class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
+                  <line y1="7.6" x2="24" y2="7.6" />
+                  <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
+                  <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
+                  <line x1="13" y1="17.6" x2="37" y2="17.6" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="multi-dropdown-2"
+                class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton-2">
+                  <li>
+                    <a href="./index.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/ourMenu.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
+                      menu</a>
+                  </li>
+                  <li>
+                    <button id="doubleDropdownButton-2" data-dropdown-toggle="doubleDropdown-2"
+                      data-dropdown-placement="right-start" type="button"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
+                      pages
+                      <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m9 5 7 7-7 7" />
+                      </svg>
+                    </button>
+                    <div id="doubleDropdown"
+                      class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                      <ul class="p-2 text-sm text-body font-medium" aria-labelledby="doubleDropdownButton">
+                        <li>
+                          <a href="./assets/pages/aboutUs.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
+                            us</a>
+                        </li>
+                        <li>
+                          <a href="./assets/pages/ourChef.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
+                            chefs</a>
+                        </li>
+                        <li>
+                          <a href="./assets/pages/booking.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
+                            page</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/portfolio.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/blog.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/signIn.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
+                      in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="col items-center justify-center gap-10 h-full dummy-container">
+            <p class="miniver text-mainColor hidden lg:block">take a sip of our innovative drinks</p>
+            <div class="row items-center justify-between gap-5">
+              <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+              <p
+                class="uppercase text-center text-mainColor Metropolis tracking-widest text-[36px] md:text-[60px] lg:text-[96px]">
+                The Finest drinks</p>
+              <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+            </div>
+            <p class="text-white max-w-md text-center Josefin font-light text-[23px]">From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</p>
+            <button
+              class="cursor-pointer uppercase px-9 py-2 OpenSans-CondLight text-white border border-mainColor tracking-widest">
+              <a href="./assets/pages/portfolio.html">view more</a></button>
+          </div>
         </div>
-        <p class="text-white max-w-md text-center Josefin font-light text-[23px]">We have a proper passion for cooking.
-          Love is the secret
-          ingredient
-          that makes all our meals taste better and magical.</p>
-        <button
-          class="cursor-pointer uppercase px-9 py-2 OpenSans-CondLight text-white border border-mainColor tracking-widest">
-          <a href="./assets/pages/portfolio.html">view more</a></button>
-          
-          <div class="row items-center justify-between gap-10">
-          <button
-            class="cursor-pointer text-mainColor decoration-double underline-offset-3 underline decoration-mainColor">1</button>
-          <button
-            class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">2</button>
-          <button
-            class="cursor-pointer text-mainColor hover:decoration-double hover:underline-offset-3 hover:underline hover:decoration-mainColor">3</button>
+        <div class="swiper-slide bg-[url(./../images/bg-img3.jpg)] h-screen bg-cover bg-center">
+          <nav class="row items-center justify-between px-7 border-b-secColor border-b">
+            <button class="p-5 cursor-pointer">
+              <img src="./assets/images/Logo.png" class="bg-auto" alt="">
+            </button>
+            <ul class="row items-center gap-5 hidden md:flex">
+              <a href="./index.html" class="nav-items tracking-widest OpenSans-CondLight">Home</a>
+              <a href="./assets/pages/ourMenu.html" class="nav-items tracking-widest OpenSans-CondLight">Our
+                Menu</a>
+              <div class="relative">
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                  data-dropdown-trigger="hover" class="nav-items tracking-widest OpenSans-CondLight px-2 py-1
+              transition duration-200 focus:bg-neutral-primary focus:text-white focus:outline-none">
+                  Pages
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay"
+                  class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                  <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton">
+                    <li>
+                      <a href="./assets/pages/aboutUs.html"
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">About
+                        Us</a>
+                    </li>
+                    <li>
+                      <a href="./assets/pages/ourChef.html"
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Our
+                        Chefs</a>
+                    </li>
+                    <li>
+                      <a href="./assets/pages/booking.html"
+                        class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest OpenSans-CondLight">Booking
+                        Page</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="./assets/pages/portfolio.html" class="nav-items tracking-widest OpenSans-CondLight">Portfolio</a>
+              <a href="./assets/pages/blog.html" class="nav-items tracking-widest OpenSans-CondLight">Blog</a>
+            </ul>
+            <div>
+              <a href="./assets/pages/signIn.html" class="p-5 max-md:hidden">
+                <i class="fa-solid fa-user text-mainColor text-[30px]"></i>
+              </a>
+              <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="md:hidden inline-flex items-center justify-center px-2 py-2
+         transition duration-200
+         hover:bg-white/10
+         focus:bg-neutral-primary focus:text-white focus:outline-none" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 25.2"
+                  class="w-10 h-auto stroke-secColor stroke-[1px] fill-none focus:stroke-black">
+                  <line y1="7.6" x2="24" y2="7.6" />
+                  <line x1="4.1" y1="0.5" x2="28.1" y2="0.5" />
+                  <line x1="10.1" y1="24.6" x2="34.1" y2="24.6" />
+                  <line x1="13" y1="17.6" x2="37" y2="17.6" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="multi-dropdown"
+                class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                  <li>
+                    <a href="./index.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Home</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/ourMenu.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">Our
+                      menu</a>
+                  </li>
+                  <li>
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                      data-dropdown-placement="right-start" type="button"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">
+                      pages
+                      <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m9 5 7 7-7 7" />
+                      </svg>
+                    </button>
+                    <div id="doubleDropdown"
+                      class="z-10 hidden bg-secBG border border-default-medium rounded-base shadow-lg w-44">
+                      <ul class="p-2 text-sm text-body font-medium" aria-labelledby="doubleDropdownButton">
+                        <li>
+                          <a href="./assets/pages/aboutUs.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">about
+                            us</a>
+                        </li>
+                        <li>
+                          <a href="./assets/pages/ourChef.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">our
+                            chefs</a>
+                        </li>
+                        <li>
+                          <a href="./assets/pages/booking.html"
+                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">booking
+                            page</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/portfolio.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">portfolio</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/blog.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams">blog</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/signIn.html"
+                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded nav-items tracking-widest CaviarDreams md:hidden">sign
+                      in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="col items-center justify-center gap-10 h-full dummy-container">
+            <p class="miniver text-mainColor hidden lg:block">the most delicious flavor combos</p>
+            <div class="row items-center justify-between gap-5">
+              <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+              <p
+                class="uppercase text-center text-mainColor Metropolis tracking-widest text-[36px] md:text-[60px] lg:text-[96px]">
+                THE FOOD HEAVEN</p>
+              <span class="hidden lg:block"> <img src="./assets/images/header-icon1.png" alt="header-icon1"></span>
+            </div>
+            <p class="text-white max-w-md text-center Josefin font-light text-[23px]">Experimentation in the kitchen and focus on excellence are among our main driving forces in cooking.</p>
+            <button
+              class="cursor-pointer uppercase px-9 py-2 OpenSans-CondLight text-white border border-mainColor tracking-widest">
+              <a href="./assets/pages/portfolio.html">view more</a></button>
+          </div>
         </div>
-       
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </header>
 
@@ -392,11 +668,12 @@
           <div class="col text-center text-[54px] font-bold gap-5">
             <p class="text-mainColor miniver text-[19px]">Our food philosophy</p>
             <p class="text-mainColor uppercase tracking-widest CaviarDreams text-[29px] lg:text-[54px]">our tips</p>
-            <p class="text-white Josefin font-light text-[19px] max-w-md">Lorem ipsum dolor sit amet, consectet nei ad icing eli sed do eiu sm od tempor se incidid sens ne utabor et dolore magiqua. Ut enim ad miains eniam quis nostrudas exercitation ullam de cm.</p>
+            <p class="text-white Josefin font-light text-[19px] max-w-md">Lorem ipsum dolor sit amet, consectet nei ad
+              icing eli sed do eiu sm od tempor se incidid sens ne utabor et dolore magiqua. Ut enim ad miains eniam
+              quis nostrudas exercitation ullam de cm.</p>
           </div>
           <div>
-            <button
-              class="text-white uppercase tracking-widest OpenSans-CondLight border border-mainColor py-2 px-8">
+            <button class="text-white uppercase tracking-widest OpenSans-CondLight border border-mainColor py-2 px-8">
               <a href="./assets/pages/portfolio.html">read more</a>
             </button>
           </div>
@@ -459,6 +736,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./assets/JS/index.js"></script>
 
 </body>
 
